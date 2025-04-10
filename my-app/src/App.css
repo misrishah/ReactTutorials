@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+.user-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 4px; /* Slightly increased padding for better appearance */
+  margin-top: 4px;
+  margin-bottom: 10px; /* Increased bottom margin to add gaps */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #044566;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+button:hover {
+  background-color: #062f44;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.user-list {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto; /* Horizontal scroll for smaller screens */
+}
+
+.user-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  table-layout: auto; /* Auto adjust column width */
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px; /* Smaller font for better fit */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+td button {
+  width: 80px; /* Fixed width for buttons */
+  padding: 5px;
+  margin: 2px;
+  background-color: #044566;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+td button:hover {
+  background-color: #062f44;
+}
+
+/* Style for view button */
+.view-btn {
+  background-color: #28a745;
+}
+
+.view-btn:hover {
+  background-color: #218838;
+}
+
+/* Style for edit button */
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Style for delete button */
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Ensure buttons fit properly in the Actions column */
+td button {
+  display: block;
+  margin: 5px auto;
+}
+
+/* Image preview modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 12px; /* Reduce font size */
+  }
+  .user-table th, .user-table td {
+    padding: 6px;
+  }
+}
