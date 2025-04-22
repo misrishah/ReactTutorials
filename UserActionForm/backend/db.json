@@ -1,0 +1,25 @@
+{
+  "opinions": [
+    {
+      "id": 1745305458925,
+      "votes": 2,
+      "userName": "Misri",
+      "title": "Form actions are new",
+      "body": "A new feature added in React 19 version."
+    },
+    {
+      "id": 1,
+      "userName": "Misri Shah",
+      "title": "React Tutorial!",
+      "body": "React is an amazing JavaScript library!..It is very much useful nowadays.",
+      "votes": 0
+    },
+    {
+      "id": 2,
+      "userName": "Misri Shah",
+      "title": "React has more depth than you might first think!",
+      "body": "React is a great library to learn! Dive deeper you will enjoy this language. ",
+      "votes": -1
+    }
+  ]
+}
