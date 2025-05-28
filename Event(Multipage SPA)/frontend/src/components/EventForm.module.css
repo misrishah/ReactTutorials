@@ -1,0 +1,46 @@
+.form {
+  max-width: 30rem;
+  margin: 3rem auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  border-radius: 3px;
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-800);
+  border: none;
+}
+
+.actions button[type='button'] {
+  background-color: transparent;
+  color: var(--color-gray-300);
+}
+
+.actions button:hover {
+  background-color: var(--color-primary-300);
+}
+
+.actions button[type='button']:hover {
+  background-color: var(--color-gray-800);
+}
